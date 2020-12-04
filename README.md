@@ -18,4 +18,4 @@ git clone https://github.com/loganautomata/blog
 
 ## 开源协议
 
-[GNU GENERAL PUBLIC LICENSE](LICENSE)
+[GPL 2.0](LICENSE)
