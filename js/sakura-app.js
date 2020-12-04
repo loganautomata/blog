@@ -2002,9 +2002,29 @@ var pio = new Paul_Pio({
         "link": "https://loganren.xyz/",
         "close": "有缘再会吧~",
         "referer": "你在 %t 的指引下来到这里(๑•̀ㅂ•́)و✧",
-        "custom": []
+        "custom": [
+            {
+                "selector": ".comment-textarea",
+                "text": "垃圾评论是禁止事项哦~"
+            }
+        ]
     },
     "night": "",
     "model": ["https://cdn.jsdelivr.net/gh/loganautomata/cdn@master/wiki/models/sagiri/model.json"],
     "tips": true
 });
+
+var typed = new Typed('.element', {
+    strings: ["Say goodbye to yesterday.", "Say hello to tomorrow.", "Remember you can be better.", "Be yourself and do yourself.", "Year by year, day by day.", "Enhance yourself to meet challenges."], //输入内容, 支持html标签
+    //"一花一世界，一木一浮生。一草一天堂，一叶一如来。", "一砂一极乐，一方一净土。一笑一尘缘，一念一清静。"
+    typeSpeed: 100, //打字速度
+    backSpeed: 50, //回退速度
+    loop: true, //是否循环
+    loopCount: Infinity, //循环次数
+    showCursor: false, //是否开启光标
+    //backDelay: 0, //后退延迟
+});
+
+if (window.console && window.console.log) {
+    console.log("%c Logan %c", "background:#FFA500; color:#ffffff", "", "https://loganren.xyz/");
+}

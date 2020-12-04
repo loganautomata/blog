@@ -16,6 +16,7 @@
 <link href='//cdn.jsdelivr.net/gh/loganautomata/cdn@master/wiki/css/pio.min.css' rel='stylesheet' type='text/css' />
 <script src='//cdn.jsdelivr.net/gh/loganautomata/cdn@master/wiki/js/l2d.js'></script>
 <script src='//cdn.jsdelivr.net/gh/loganautomata/cdn@master/wiki/js/pio.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
