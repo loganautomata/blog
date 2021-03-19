@@ -1841,7 +1841,7 @@ h1.page-title.mb- {
     z-index: 99;
     width: 70px;
     height: 900px;
-    background: url(https://cdn.jsdelivr.net/gh/loganautomata/cdn@master/blog/sakura/images/scroll.webp) no-repeat center;
+    background: url(https://images.loganren.xyz/images/2021/03/18/scroll-sagiri.png) no-repeat center;
     background-size: contain;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
@@ -3477,7 +3477,7 @@ a.page-numbers {
 }
 
 .comment-respond textarea {
-    background-image: url(https://cdn.jsdelivr.net/gh/loganautomata/cdn@master/blog/sakura/images/comment-bg.webp);
+    background-image: url(https://images.loganren.xyz/images/2021/03/18/1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;

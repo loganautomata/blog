@@ -2006,11 +2006,31 @@ var pio = new Paul_Pio({
             {
                 "selector": ".comment-textarea",
                 "text": "垃圾评论是禁止事项哦~"
+            },
+            {
+                "selector": "#pagination a",
+                "text": "想看看以前的文章吗?"
+            },
+            {
+                "selector": ".notification",
+                "text": "想看看大家的评论吗?"
+            },
+            {
+                "selector": ".cd-top",
+                "text": "点击这里可以快速回到顶部噢~"
+            },
+            {
+                "selector": ".highlight-wrap",
+                "text": "点击代码块的标题栏可以放大噢~"
+            },
+            {
+                "type": "read",
+                "selector": ".post-list-thumb a"
             }
         ]
     },
     "night": "",
-    "model": ["https://cdn.jsdelivr.net/gh/loganautomata/cdn@master/wiki/models/sagiri/model.json"],
+    "model": ["https://loganren.xyz/wp-content/themes/Sakura/live2d-models/sagiri/model.json"],
     "tips": true
 });
 

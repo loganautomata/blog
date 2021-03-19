@@ -177,12 +177,5 @@
         data-theme="orange">
     </div>
 <?php endif; ?>
-<?php
-    if( !wp_is_mobile() ) {
-    echo '<script src="https://cdn.jsdelivr.net/gh/loganautomata/cdn@master/blog/sakura/js/wave.js" async="async"></script>';
-    } else {
-    
-    }
-?>
 </body>
 </html>

@@ -13,9 +13,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <link rel="stylesheet" href="https://fonts.lug.ustc.edu.cn/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
-<link href='//cdn.jsdelivr.net/gh/loganautomata/cdn@master/wiki/css/pio.min.css' rel='stylesheet' type='text/css' />
-<script src='//cdn.jsdelivr.net/gh/loganautomata/cdn@master/wiki/js/l2d.js'></script>
-<script src='//cdn.jsdelivr.net/gh/loganautomata/cdn@master/wiki/js/pio.min.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
