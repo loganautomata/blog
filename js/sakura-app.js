@@ -2024,6 +2024,10 @@ var pio = new Paul_Pio({
                 "text": "点击代码块的标题栏可以放大噢~"
             },
             {
+                "selector": ".header-user-avatar",
+                "text": "点击这里可以登录或注册噢~"
+            },
+            {
                 "type": "read",
                 "selector": ".post-list-thumb a"
             }
