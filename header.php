@@ -12,7 +12,7 @@
 <?php header('X-Frame-Options: SAMEORIGIN'); ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<link rel="stylesheet" href="https://fonts.lug.ustc.edu.cn/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+<!-- <link rel="stylesheet" href="https://fonts.lug.ustc.edu.cn/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all"> -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
