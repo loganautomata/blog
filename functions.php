@@ -841,7 +841,7 @@ function custom_html()
         $loginbg = 'https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.2.7/images/hd.png';
     }
     if (wp_is_mobile()) {
-        $loginbg = 'https://images.loganren.xyz/images/2021/04/14/60141148_p0.jpg';
+        $loginbg = 'https://images.loganren.xyz/images/2021/04/16/mobile-login-bg.jpg';
     }
     echo '<script type="text/javascript" src="' . get_template_directory_uri() . '/js/login.js"></script>' . "\n";
     echo '<script type="text/javascript">' . "\n";
