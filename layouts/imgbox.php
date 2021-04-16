@@ -14,8 +14,11 @@
          <div class="header-tou" ><a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url'); ?>/images/avatar.jpg"></a></div>	
       	<?php endif; ?>
 		<div class="header-info">
-            <?php //akina_option('admin_des', 'Hi, Mashiro?'); ?>
+            <?php if (wp_is_mobile()):?>
+            <p><?php echo akina_option('admin_des', 'Hi, Mashiro?'); ?></p>
+            <?php else :?>
             <p><i class="fa fa-quote-left faa-flash animated"></i><span class="element"></span><i class="fa fa-quote-right faa-flash animated"></i></p>
+            <?php endif; ?>
             <?php if (akina_option('social_style')=="v2"): ?>
             <div class="top-social_v2">
                 <li id="bg-pre"><img class="flipx" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg"/></li>

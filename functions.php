@@ -227,6 +227,7 @@ function sakura_scripts()
     wp_enqueue_script('l2d', get_template_directory_uri() . '/js/l2d.js');
     if (!wp_is_mobile()) {
         wp_enqueue_script('wave', get_template_directory_uri() . '/js/wave.js', array(), NULL, true);
+        wp_enqueue_script('typed', get_template_directory_uri() . '/js/typed.js', array(), NULL, true);
     }
 }
 add_action('wp_enqueue_scripts', 'sakura_scripts');
