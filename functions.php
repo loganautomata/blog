@@ -839,6 +839,9 @@ function custom_html()
     } else {
         $loginbg = 'https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.2.7/images/hd.png';
     }
+    if (wp_is_mobile()) {
+        $loginbg = 'https://images.loganren.xyz/images/2021/04/14/60141148_p0.jpg';
+    }
     echo '<script type="text/javascript" src="' . get_template_directory_uri() . '/js/login.js"></script>' . "\n";
     echo '<script type="text/javascript">' . "\n";
     echo 'jQuery("body").prepend("<div class=\"loading\"><img src=\"https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/login_loading.gif\" width=\"58\" height=\"10\"></div><div id=\"bg\"><img /></div>");' . "\n";
@@ -856,15 +859,22 @@ function custom_html()
 		var y=$(\'#registerform\').find(\'input[name="verification"]\').val();
 		var z=$(\'#lostpasswordform\').find(\'input[name="verification"]\').val();
 		if (x=="verification" || y=="verification" || z=="verification"){
-		  alert("Please slide the block to verificate!");
+		  // alert("Please slide the block to verificate!");
+          var login = $("div#login");
+          var h1 = login.children("h1");
+          if (login.children("div#login_error").length != 0)
+          {
+            login.children("div#login_error").remove(); 
+          }
+          h1.after($("<div></div>").attr("id", "login_error").append($("<p></p>").text("请滑动滑块验证")));
 		  return false;
 	  }
 	}
 	$(document).ready(function(){
-		$( \'<p><div id="verification-slider"><div id="slider"><div id="slider_bg"></div><span id="label">»</span><span id="labelTip">Slide to Verificate</span></div><input type="hidden" name="verification" value="verification" /></div><p>\' ).insertBefore( $( ".submit" ) );
+		$( \'<p><div id="verification-slider"><div id="slider"><div id="slider_bg"></div><span id="label">»</span><span id="labelTip">滑动验证</span></div><input type="hidden" name="verification" value="verification" /></div><p>\' ).insertBefore( $( ".submit" ) );
 		$(\'form\').attr(\'onsubmit\',\'return verificationOK();\');
         $(\'h1 a\').attr(\'style\',\'background-image: url(' . akina_option('logo_img') . '); \');
-		$(".forgetmenot").replaceWith(\'<p class="forgetmenot">Remember Me<input name="rememberme" id="rememberme" value="forever" type="checkbox"><label for="rememberme" style="float: right;margin-top: 5px;transform: scale(2);margin-right: -10px;"></label></p>\');
+		$(".forgetmenot").replaceWith(\'<p class="forgetmenot">记住密码<input name="rememberme" id="rememberme" value="forever" type="checkbox"><label for="rememberme" style="float: right;margin-top: 5px;transform: scale(2);margin-right: -10px;"></label></p>\');
 	});
 	</script>';
     echo '<script type="text/javascript">

@@ -3879,8 +3879,11 @@ li.feature-2 {
         background-attachment: scroll
     }
     #video-container,
-    .focusinfo {
+    /* .focusinfo {
         display: none
+    } */
+    .loadvideo{
+    	display: none/*移动端主页视频禁用*/
     }
 }
 
@@ -8919,14 +8922,14 @@ h1[id*=toc-head]::before,h2[id*=toc-head]::before,h3[id*=toc-head]::before,h4[id
 }
  
 .logolink a:hover .sakuraso {
-    background-color: orange;
+    background-color: #EE9CA7;
     color: #fff;
 }
  
 .logolink a:hover .shironeko,
 .logolink a:hover .no,
 .logolink a:hover rt {
-    color: orange;
+    color: #EE9CA7;
 }
  
 .logolink.moe-mashiro a {
@@ -8995,3 +8998,168 @@ h1[id*=toc-head]::before,h2[id*=toc-head]::before,h3[id*=toc-head]::before,h4[id
         border-radius: 50%;
     }
 }
+
+/*一言和社交网络*/
+.header-info {
+    width: 63%;
+    margin: auto;
+    font-size: 20px;
+    color: #EE9CA7;
+    background: rgba(255,255,255,0.45);
+    padding: 15px;
+    margin-top: 22px;
+    letter-spacing: 0;
+    line-height: 30px;
+    border-radius: 10px;
+    box-sizing: initial;
+    white-space: nowrap
+}
+
+.top-social img {
+    height: 47px;
+    width: 47px;
+    padding: 9px;
+    background: rgba(255,255,255,0.45)
+}
+
+@media (max-width:860px) {
+    .focusinfo .header-tou img {/*头像禁用*/
+      display: none
+    }	
+    .center-text {/*文字禁用*/
+      display: none
+    }
+    .header-info{/*一言*/
+      /* display: none */
+      width: auto;
+      font-size: 13px;
+      padding: 10px;
+      margin-top: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;/*防溢出*/
+      white-space: nowrap;/*防溢出*/
+    }
+    .focusinfo img {/*社交图标*/
+	    width: 35px;
+  	    height: 35px;
+  	    padding: 5px;
+  	    border-radius: 100%;
+  	    /* margin-top: 70px; */
+   }
+}
+
+/*菜单栏居中*/
+@media (min-width: 1201px) {
+    .site-header.is-homepage .lower-cantiner {
+        display: none;
+    }
+     
+    .site-header.is-homepage.yya .lower-cantiner {
+        display: block;
+    }
+     
+    .site-top .lower nav {
+        display: block !important;
+    }
+     
+    .site-header:hover.is-homepage .lower-cantiner {
+        display: block;
+    }
+     
+    .gizle {
+        top: 0px;
+        z-index: 9999;
+    }
+     
+    .site-top .lower-cantiner {
+        position: absolute;
+        left: 50%;
+        min-width: 540.4px;
+        pointer-events: none;
+    }
+     
+    .site-top .lower_mod {
+        display: inline-block;
+        margin: 15px 0 0 10px;
+        font-size: 16px;
+        float: unset;
+        position: relative;
+        left: -50%;
+       pointer-events: auto !important;
+    }
+     
+    #show-nav.mobile-fit {
+        position: fixed !important;
+        right: 120px;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+ 
+/* @media (max-width: 900px) {
+    .site-top .lower {
+        left: 15px;
+    }
+ 
+    .site-top .lower-cantiner {
+        left: 0;
+    }
+ 
+    .site-top .lower nav.hide {
+        display: none !important;
+    }
+    #show-nav.mobile-fit {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+ 
+@media (max-width:860px) {
+    .site-top .lower nav ul li .animated-hover i {
+        display: inline
+    }
+} */
+
+@media (max-width: 1200px) {
+    .site-header.is-homepage .lower-cantiner {
+        display: none;
+    }
+     
+    .site-header.is-homepage.yya .lower-cantiner {
+        display: block;
+    }
+     
+    .site-top .lower nav {
+        display: block !important;
+    }
+     
+    .site-header:hover.is-homepage .lower-cantiner {
+        display: block;
+    }
+     
+    .gizle {
+        top: 0px;
+        z-index: 9999;
+    }
+     
+    .site-top .lower-cantiner {
+        pointer-events: none;
+    }
+     
+    .site-top .lower_mod {
+        display: inline-block;
+        margin: 15px 0 0 10px;
+        font-size: 16px;
+        position: relative;
+        left: 145px;
+        pointer-events: auto !important;
+    }
+     
+    #show-nav.mobile-fit {
+        position: fixed !important;
+        right: 120px;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
