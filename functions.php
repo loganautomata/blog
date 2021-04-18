@@ -224,8 +224,9 @@ function sakura_scripts()
 
     //引入自定义js
     wp_enqueue_script('pio', get_template_directory_uri() . '/js/pio.js');
-    wp_enqueue_script('l2d', get_template_directory_uri() . '/js/l2d.js');
+
     if (!wp_is_mobile()) {
+        wp_enqueue_script('l2d', get_template_directory_uri() . '/js/l2d.js');
         wp_enqueue_script('wave', get_template_directory_uri() . '/js/wave.js', array(), NULL, true);
         wp_enqueue_script('typed', get_template_directory_uri() . '/js/typed.js', array(), NULL, true);
     }
