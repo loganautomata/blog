@@ -417,24 +417,31 @@ $(document).ready(function () {
                 switch (tagid) {
                     case "white-bg":
                         $("body").css("background-image", "url(" + checkskin_bg(mashiro_option.skin_bg0) + ")");
+                        $("body").css("background-size", "");
                         break;
                     case "sakura-bg":
                         $("body").css("background-image", "url(" + checkskin_bg(mashiro_option.skin_bg1) + ")");
+                        $("body").css("background-size", "");
                         break;
                     case "gribs-bg":
                         $("body").css("background-image", "url(" + checkskin_bg(mashiro_option.skin_bg2) + ")");
+                        $("body").css("background-size", "");
                         break;
                     case "pixiv-bg":
                         $("body").css("background-image", "url(" + checkskin_bg(mashiro_option.skin_bg3) + ")");
+                        $("body").css("background-size", "");
                         break;
                     case "KAdots-bg":
                         $("body").css("background-image", "url(" + checkskin_bg(mashiro_option.skin_bg4) + ")");
+                        $("body").css("background-size", "");
                         break;
                     case "totem-bg":
                         $("body").css("background-image", "url(" + checkskin_bg(mashiro_option.skin_bg5) + ")");
+                        $("body").css("background-size", "");
                         break;
                     case "bing-bg":
                         $("body").css("background-image", "url(" + checkskin_bg(mashiro_option.skin_bg6) + ")");
+                        $("body").css("background-size", "cover");
                         break;
                     // case "dark-bg":
                     //     $("body").css("background-image", "url(" + checkskin_bg(mashiro_option.skin_bg7) + ")");
@@ -1657,6 +1664,7 @@ var home = location.href,
                         } else {
                             $("#pagination").html("<span>很高兴你翻到这里，但是真的没有了...</span>");
                         }
+                        pio.reloadAction();
                     }
                 });
                 return false;

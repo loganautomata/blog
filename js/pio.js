@@ -273,6 +273,13 @@ var Paul_Pio = function (prop) {
         }
     };
 
+    // 页面局部更新时, 更新模型动作
+    this.reloadAction = function () {
+        if(!(prop.hidden && modules.isMobile())){
+            if(prop.content.custom) action.custom();
+        }
+    };
+
     // 运行
     this.init = function (onlyText) {
         if(!(prop.hidden && modules.isMobile())){
