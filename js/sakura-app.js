@@ -27,7 +27,7 @@ mashiro_global.ini = new function () {
         coverVideoIni();
         checkskinSecter();
         load_bangumi();
-        pio.init();
+        pio.init(ajax = false, pjax = true);
     }
 }
 
@@ -1664,7 +1664,7 @@ var home = location.href,
                         } else {
                             $("#pagination").html("<span>很高兴你翻到这里，但是真的没有了...</span>");
                         }
-                        pio.reloadAction();
+                        pio.init(ajax=true, pjax=false);
                     }
                 });
                 return false;
