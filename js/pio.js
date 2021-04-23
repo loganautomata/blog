@@ -159,6 +159,7 @@ var Paul_Pio = function (prop) {
                 modules.render(prop.content.touch || ["你在干什么？", "再摸我就报警了！", "HENTAI!", "不可以这样欺负我啦！"]);
             };
         },
+        // 左侧按钮
         new_buttons: function () {
             document.body.insertAdjacentHTML("beforeend", `
                 <div class="live2d-tool hide-live2d no-select" id="show_model"><div class="keys">Hide</div></div>
@@ -188,6 +189,7 @@ var Paul_Pio = function (prop) {
                     localStorage.removeItem("posterGirl");
                     $("div.pio-container").css("display", "");
                     modules.render("好久不见");
+                    $("div.pio-container").css("bottom", "-536px");
                     $("div.pio-container").animate({bottom:"0px"}, 2233, function(){});
                     $(".hide-live2d").css("bottom", "156px"), $(".save-live2d, .switch-live2d, .live2d-pio, .live2d-tia").removeClass("hide-live2d-tool");
                     $(".hide-live2d .keys").html("Hide");
@@ -195,7 +197,7 @@ var Paul_Pio = function (prop) {
                     modules.render("君泪盈，妾泪盈。罗带同心结未成，江头潮已平。");
                     localStorage.setItem("posterGirl", 0);
                     $("div.pio-container").animate({bottom:"-536px"}, 2233, function(){
-                        $("div.pio-container").css("display", "none");
+                        $("div.pio-container").css("bottom", "-580px");
                     });
                     $(".hide-live2d").css("bottom", "66px"), $(".save-live2d, .switch-live2d, .live2d-pio, .live2d-tia").addClass("hide-live2d-tool");
                     $(".hide-live2d .keys").html("Show");
@@ -324,33 +326,6 @@ var Paul_Pio = function (prop) {
         }
     };
 
-    // // 页面局部更新时, 更新模型动作
-    // this.reloadAction = function () {
-    //     if (!(prop.hidden && modules.isMobile())) {
-    //         if (prop.content.custom) action.custom();
-    //     }
-    // };
-
-    // //pjax重载
-    // this.refresh_pjax = function (onlyText) {
-    //     if (!(prop.hidden && modules.isMobile())) {
-    //         current.body.classList.add("loaded");
-
-    //         if (!onlyText) {
-    //             action.welcome();
-    //             loadlive2d("pio", prop.model[0]);
-    //         }
-
-    //         switch (prop.mode) {
-    //             case "static": begin.static(); break;
-    //             case "fixed": begin.fixed_pjax(); break;
-    //             case "draggable": begin.draggable(); break;
-    //         }
-
-    //         if (prop.content.custom) action.custom();
-    //     }
-    // };
-
     // 运行
     this.init = function (ajax, pjax) {
         if (!(prop.hidden && modules.isMobile())) {
@@ -376,8 +351,7 @@ var Paul_Pio = function (prop) {
     this.init();
     if (localStorage.getItem("posterGirl")) {
         $("div.pio-container").css({
-            "bottom": "-536px",
-            "display": "none"
+            "bottom": "-580px",
         });
         $(".hide-live2d").css("bottom", "66px"), $(".save-live2d, .switch-live2d, .live2d-pio, .live2d-tia").addClass("hide-live2d-tool");
         $(".hide-live2d .keys").html("Show");
