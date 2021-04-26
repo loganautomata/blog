@@ -496,7 +496,7 @@ class Meting
             case 'netease':
             $api = array(
                 'method' => 'POST',
-                'url'    => 'http://music.163.com/api/v6/playlist/detail',
+                'url'    => 'http://music.163.com/api/v3/playlist/detail',
                 'body'   => array(
                     's'  => '0',
                     'id' => $id,
@@ -1182,7 +1182,7 @@ class Meting
             'tlyric' => isset($result['tlyric']['lyric']) ? $result['tlyric']['lyric'] : '',
         );
 
-        return json_encode($data, JSON_UNESCAPED_UNICODE);
+        return json_encode($data);
     }
 
     private function tencent_lyric($result)
@@ -1194,7 +1194,7 @@ class Meting
             'tlyric' => isset($result['trans']) ? base64_decode($result['trans']) : '',
         );
 
-        return json_encode($data, JSON_UNESCAPED_UNICODE);
+        return json_encode($data);
     }
 
     private function xiami_lyric($result)
@@ -1227,7 +1227,7 @@ class Meting
             );
         }
 
-        return json_encode($arr, JSON_UNESCAPED_UNICODE);
+        return json_encode($arr);
     }
 
     private function kugou_lyric($result)
@@ -1251,7 +1251,7 @@ class Meting
             'tlyric' => '',
         );
 
-        return json_encode($arr, JSON_UNESCAPED_UNICODE);
+        return json_encode($arr);
     }
 
     private function baidu_lyric($result)
@@ -1262,7 +1262,7 @@ class Meting
             'tlyric' => '',
         );
 
-        return json_encode($data, JSON_UNESCAPED_UNICODE);
+        return json_encode($data);
     }
 
     private function format_netease($data)
