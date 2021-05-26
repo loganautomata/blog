@@ -1,6 +1,6 @@
 ﻿# Sakura主题Sagiri分支
 
-[![](https://img.shields.io/badge/blog-@LoganRen-orange.svg?style=plastic)](https://loganren.xyz)![](https://img.shields.io/badge/PHP-7.1+-blue.svg?style=plastic)![](https://img.shields.io/badge/WP-5.0+-green.svg?style=plastic)
+[![](https://img.shields.io/badge/blog-@LoganRen-orange.svg?style=plastic)](https://blog.logan.ren)![](https://img.shields.io/badge/PHP-7.1+-blue.svg?style=plastic)![](https://img.shields.io/badge/WP-5.0+-green.svg?style=plastic)
 
 ## 背景
 

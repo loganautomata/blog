@@ -31,12 +31,12 @@
 			<div class="footer-device">
 			<p>
 				<span>
-					  <a href="https://beian.bizcn.com/" target="_blank">鲁ICP备20000906号</a>
+					  <a href="https://beian.miit.gov.cn" target="_blank">蜀ICP备2021011520号-1</a>
 				  </span>
 				</p>
 			<p style="font-family: 'Ubuntu', sans-serif;">
 					<span style="color: #b9b9b9;">
-						&copy 2019-<?php echo current_time('Y')?> <img class="iconfont rotating" style="color: #ffc0cb;display:inline-block;width:16px;height:16px" src="https://cdn.jsdelivr.net/gh/loganautomata/cdn@master/blog/images/logo-blog.png"></img> <a href="https://loganren.xyz/" target="_blank" style="color: #b9b9b9;">Loganの小站</a>
+						&copy 2019-<?php echo current_time('Y')?> <img class="iconfont rotating" style="color: #ffc0cb;display:inline-block;width:16px;height:16px" src="https://cdn.jsdelivr.net/gh/loganautomata/cdn@master/blog/images/logo-blog.png"></img> <a href=<?php echo home_url() ?> target="_blank" style="color: #b9b9b9;">Loganの小站</a>
 					</span>
 				</p>
 			</div>
@@ -69,12 +69,12 @@
 		<div class='loganren-cover'>
 			<?php
 			if ( is_user_logged_in() ){
-				echo '<a href="https://loganren.xyz/wp-admin/profile.php">';
+				echo '<a href="' . home_url() . '/wp-admin/profile.php">';
 				echo get_avatar(get_current_user_id(), 64, '', '', array('class' => 'loganren-avatar'));
 				echo '</a>';
 			}
 			else {
-				echo '<a href="https://loganren.xyz/wp-login.php">';
+				echo '<a href="' . home_url() . '/wp-login.php">';
 				echo '<img class="loganren-avatar" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/none.png"></img>';
 				echo '</a>';
 			}

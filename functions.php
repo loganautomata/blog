@@ -842,7 +842,7 @@ function custom_html()
         $loginbg = 'https://cdn.jsdelivr.net/gh/mashirozx/Sakura@3.2.7/images/hd.png';
     }
     if (wp_is_mobile()) {
-        $loginbg = 'https://images.loganren.xyz/images/2021/04/16/mobile-login-bg.jpg';
+        $loginbg = 'https://wp.oss.logan.ren/sakura/images/mobile-login-bg.jpg';
     }
     echo '<script type="text/javascript" src="' . get_template_directory_uri() . '/js/login.js"></script>' . "\n";
     echo '<script type="text/javascript">' . "\n";
@@ -979,7 +979,7 @@ function resetpassword_message_fix($message)
       -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
       box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">
         <header style="overflow: hidden;">
-            <img style="width:100%;z-index: 666;" src="https://loganren.xyz/wp-content/uploads/2021/03/mail-resetpwd.jpg">
+            <img style="width:100%;z-index: 666;" src="https://wp.oss.logan.ren/mail-resetpwd.jpg">
         </header>
         <div style="padding: 5px 20px;">
         <p style="position: relative;
