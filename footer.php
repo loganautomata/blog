@@ -36,7 +36,7 @@
 				</p>
 			<p style="font-family: 'Ubuntu', sans-serif;">
 					<span style="color: #b9b9b9;">
-						&copy 2019-<?php echo current_time('Y')?> <img class="iconfont rotating" style="color: #ffc0cb;display:inline-block;width:16px;height:16px" src="https://cdn.jsdelivr.net/gh/loganautomata/cdn@master/blog/images/logo-blog.png"></img> <a href=<?php echo home_url() ?> target="_blank" style="color: #b9b9b9;">Loganの小站</a>
+						&copy 2019-<?php echo current_time('Y')?> <img class="iconfont rotating" style="color: #ffc0cb;display:inline-block;width:16px;height:16px" src="https://wp.oss.logan.ren/logo.png"></img> <a href=<?php echo home_url() ?> target="_blank" style="color: #b9b9b9;">Loganの小站</a>
 					</span>
 				</p>
 			</div>
