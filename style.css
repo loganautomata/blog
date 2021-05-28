@@ -146,7 +146,7 @@ template {
 a {
     background-color: transparent;
     text-decoration: none;
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur), auto
+    cursor: url(https://wp.oss.logan.ren/sakura/images/help.cur), auto
 }
 
 a:active,
@@ -155,7 +155,7 @@ a:hover {
 }
 
 a:active {
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/work.cur), alias
+    cursor: url(https://wp.oss.logan.ren/sakura/images/work.cur), alias
 }
 
 abbr[title] {
@@ -338,7 +338,7 @@ h6 {
 
 p {
     margin-bottom: 1.5em;
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur), auto
+    cursor: url(https://wp.oss.logan.ren/sakura/images/write.cur), auto
 }
 
 cite,
@@ -434,7 +434,7 @@ html {
 body {
     background: #fff;
     background-attachment: fixed;
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur), auto
+    cursor: url(https://wp.oss.logan.ren/sakura/images/normal.cur), auto
 }
 
 blockquote:after,
@@ -1845,7 +1845,7 @@ h1.page-title.mb- {
     background-size: contain;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur), auto;
+    cursor: url(https://wp.oss.logan.ren/sakura/images/no.cur), auto;
     opacity: 1
 }
 
@@ -4379,7 +4379,7 @@ body.dark .ins-section .fa{
 }
 .ins-section .ins-section-header,.ins-section .ins-search-item {
 	padding: 8px 15px;
-	cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur),auto;
+	cursor: url(https://wp.oss.logan.ren/sakura/images/help.cur),auto;
 }
 
 .ins-section .ins-search-item .search-keyword {
@@ -4414,7 +4414,7 @@ body.dark .ins-section .fa{
 	font-size: 12px;
 	color: #9a9a9a;
 	margin: 5px 0 0 0px;
-	cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur),auto;
+	cursor: url(https://wp.oss.logan.ren/sakura/images/help.cur),auto;
 }
 
 .ins-section .ins-search-item:hover,.ins-section .ins-search-item.active {
@@ -6093,7 +6093,7 @@ body.dark .user-menu-option a:hover {
     border: 0;
     color: #fff;
     line-height: 1;
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur), auto;
+    cursor: url(https://wp.oss.logan.ren/sakura/images/no.cur), auto;
     font-size: 14px;
     font-weight: 500;
     padding: 7px 15px;
@@ -6235,7 +6235,7 @@ input.botui-actions-text-input::-moz-focus-inner {
 }
 
 button.botui-actions-buttons-button {
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur), auto;
+    cursor: url(https://wp.oss.logan.ren/sakura/images/no.cur), auto;
     -webkit-appearance: button
 }
 
@@ -7653,7 +7653,7 @@ a.toc-link {
 .emotion-item,
 .on-hover,
 .tieba-container span {
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur), auto
+    cursor: url(https://wp.oss.logan.ren/sakura/images/no.cur), auto
 }
 
 .alignright {
@@ -8139,7 +8139,7 @@ a.toc-link {
     padding: 2px;
     text-shadow: none;
     border-radius: 0 0 5px 5px;
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur), auto
+    cursor: url(https://wp.oss.logan.ren/sakura/images/write.cur), auto
 }
 
 .highlight-wrap code[data-rel]:before {
@@ -9171,6 +9171,7 @@ h1[id*=toc-head]::before,h2[id*=toc-head]::before,h3[id*=toc-head]::before,h4[id
     color: #666;
     position: fixed;
     user-select: none;
+    cursor: url(https://wp.oss.logan.ren/sakura/images/hand.cur), auto;
 }
 .pio-container:not(.loaded){ display: none }
 
