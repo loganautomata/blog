@@ -9077,14 +9077,15 @@ h1[id*=toc-head]::before,h2[id*=toc-head]::before,h3[id*=toc-head]::before,h4[id
         min-width: 540.4px;
         pointer-events: none;
     }
-     
+    
+    /*向左的偏移量*/
     .site-top .lower_mod {
         display: inline-block;
         margin: 15px 0 0 10px;
         font-size: 16px;
         float: unset;
         position: relative;
-        left: -50%;
+        left: -55%;
        pointer-events: auto !important;
     }
      
@@ -9145,13 +9146,14 @@ h1[id*=toc-head]::before,h2[id*=toc-head]::before,h3[id*=toc-head]::before,h4[id
     .site-top .lower-cantiner {
         pointer-events: none;
     }
-     
+    
+    /*向左的偏移量*/
     .site-top .lower_mod {
         display: inline-block;
         margin: 15px 0 0 10px;
         font-size: 16px;
         position: relative;
-        left: 145px;
+        left: 40px;
         pointer-events: auto !important;
     }
      
