@@ -2046,5 +2046,5 @@ var pio = new Paul_Pio({
 });
 
 if (window.console && window.console.log) {
-    console.log("%c Logan %c", "background:#FFA500; color:#ffffff", "", "https://blog.logan.ren/");
+    console.log("%c Logan %c", "background:#FFA500; color:#ffffff", "", "https://www.logan.ren/");
 }
