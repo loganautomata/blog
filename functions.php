@@ -836,7 +836,7 @@ function custom_headertitle($title)
 {
     return get_bloginfo('name');
 }
-add_filter('login_headertitle', 'custom_headertitle');
+add_filter('login_headertext', 'custom_headertitle');
 
 //Login Page Link
 function custom_loginlogo_url($url)
